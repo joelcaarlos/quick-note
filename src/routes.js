@@ -4,16 +4,17 @@ import Cadastro from "./pages/Cadastro";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 
-function Rotas(){
+function Router(){
     return(
         <BrowserRouter>
         <Routes>
-            <Route path="/login" component={Login}/>
-            <Route path="/cadastro" component={Cadastro}/>
-            <Route path="/home" component={Home}/>
+            <Route path="/login" element={<Login/>}/>
+            <Route path="/cadastro" element={<Cadastro/>}/>
+            <Route path="/home" element={<Home/>}/>
         </Routes>
         </BrowserRouter>
+
     );
 }
 
-export default Rotas;
+export default Router;
